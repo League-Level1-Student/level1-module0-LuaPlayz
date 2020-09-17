@@ -38,10 +38,10 @@ quizWindow.add(noice);
 // 5. call the pack() method on the quiz window
 quizWindow.pack();
 		// 6. ask a question that relates to the image
-String answer=JOptionPane.showInputDialog("yesh or nah?");
+String answer=JOptionPane.showInputDialog("Name the characters in the order from left to right. (Last names)");
 		// 7. print "CORRECT" if the user gave the right answer
-if (answer.equalsIgnoreCase("yesh")) {
-	JOptionPane.showMessageDialog(null, "YESH! YOU ANSWERED CORRECTLY! GOOD! NICE! CONGRATS!");
+if (answer.equalsIgnoreCase("Midoriya and Todoroki")) {
+	JOptionPane.showMessageDialog(null, "GOOD JOB! YOU ANSWERED CORRECTLY! TIME FOR QUESTION 2!");
 }
 		// 8. print "INCORRECT" if the answer is wrong
 else {
@@ -54,13 +54,21 @@ quizWindow.remove(noice);
 		// of code)
 String beautiful="https://assets.puzzlefactory.pl/puzzle/219/653/original.jpg";
 		// 11. add the second image to the quiz window
-
+Component YeAh;
+YeAh=createImage(beautiful);
+quizWindow.add(YeAh);
 		// 12. pack the quiz window
-
+quizWindow.pack();
 		// 13. ask another question
-
+String answer2=JOptionPane.showInputDialog("What class is this? (Example: Class 6T)");
 		// 14+ check answer, say if correct or incorrect, etc.
-
+if (answer2.equalsIgnoreCase("Class 1A")) {
+	JOptionPane.showMessageDialog(null, "YESH! YOU ANSWERED CORRECTLY! GOOD! NICE! CONGRATS!");
+}
+		// 8. print "INCORRECT" if the answer is wrong
+else {
+	JOptionPane.showMessageDialog(null, "No. You answered incorrectly. Bad.");
+}
 	}
 
 	private Component createImage(String imageUrl) throws MalformedURLException {
@@ -75,3 +83,31 @@ String beautiful="https://assets.puzzlefactory.pl/puzzle/219/653/original.jpg";
 	// *15. make something happen when mouse enters image
 	// (imageComponent.addMouseMotionListener())
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
