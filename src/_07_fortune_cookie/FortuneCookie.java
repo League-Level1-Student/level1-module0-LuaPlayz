@@ -13,6 +13,7 @@ public class FortuneCookie implements ActionListener {
     public void showButton() {
         System.out.println("Button clicked");
 JFrame frame = new JFrame();
+frame.setVisible(true);
 JButton button = new JButton();
 frame.add(button);
 frame.pack();
@@ -26,19 +27,23 @@ button.addActionListener(this);
 	
 	 int rand = new Random().nextInt(5);
 	 if (rand==1) {
-		 JOptionPane.showMessageDialog(null, "");
+		 System.out.println("You will win the lottery");
 	 }
 	 
 	 if (rand==2) {
-		 JOptionPane.showMessageDialog(null, "");
+		 System.out.println("You will eat fruit tomorrow");
 	 }
 	 
 	 if (rand==3) {
-		 JOptionPane.showMessageDialog(null, "");
+		 System.out.println("You will get a pet");
 	 }
 	 
 	 if (rand==4) {
-		 JOptionPane.showMessageDialog(null, "");
+		 System.out.println("You will eat meat today");
+	 }
+	 
+	 if (rand==5) {
+		 System.out.println("You will get slapped soon");
 	 }
 	 
 	 }
