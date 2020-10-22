@@ -16,11 +16,11 @@ import javax.swing.JPanel;
 public class JackInTheBox implements ActionListener {
 	JFrame frame = new JFrame();
 	JLabel label= new JLabel();
+	JPanel panel = new JPanel();
 	int count=0;
 	public void setup() {
 	        	frame.setVisible(true);
 	        	JButton button = new JButton();
-	        	JPanel panel = new JPanel();
 	        	panel.add(button);
 	        	panel.add(label);
 	        	frame.add(panel);
@@ -71,6 +71,7 @@ public class JackInTheBox implements ActionListener {
 		showPicture("jackInTheBox.png");
 		System.out.println("hi");
 		label=createLabelImage("jackInTheBox.png");
+		panel.add(label);
 		frame.pack();
 	
 	}
